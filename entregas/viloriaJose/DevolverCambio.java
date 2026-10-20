@@ -37,8 +37,24 @@ class DeveloperCambio {
         final int PRECIOTRES;
         PRECIOTRES = 37;
 
+        System.out.println("Debes pagar " + PRECIOTRES + "€, ingrese el dinero:");
+
+        dineroIngresado = scanner.nextInt();
+        puedePagar = dineroIngresado >= PRECIOTRES;
+        cambio = dineroIngresado - PRECIOTRES;
+
+        System.out.println(puedePagar ? "Tu cambio es " + cambio + "€" : "No tienes suficiente dinero");
+
         final int PRECIOCUATRO;
         PRECIOCUATRO = 5;
+
+        System.out.println("Debes pagar " + PRECIOCUATRO + "€, ingrese el dinero:");
+
+        dineroIngresado = scanner.nextInt();
+        puedePagar = dineroIngresado >= PRECIOCUATRO;
+        cambio = dineroIngresado - PRECIOCUATRO;
+
+        System.out.println(puedePagar ? "Tu cambio es " + cambio + "€" : "No tienes suficiente dinero");
 
         System.out.println();
         
